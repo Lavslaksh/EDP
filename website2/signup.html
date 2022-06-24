@@ -1,0 +1,48 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="signup_style.css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function get_username()
+{
+ var name=$("#name").val();
+ if(name!="")
+ {
+  $.ajax
+  ({
+   type:'post',
+   url:'do_signup.php',
+   data:{
+    get_username:name
+   },
+   success:function(response) 
+   {
+    $("#username").css({"display":"block"});
+    $("#username").html("UserName : "+response);
+    $("#username_value").val(response);
+   }
+  });
+ }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+
+<div id="signup_form">
+ <p id="signup_label">SignUp Form</p>
+ <form method="post"action="do_signup.php">
+  <input type="text" name="name" id="name" placeholder="Enter Name" onblur="get_username();">
+  <p id="username"></p>
+  <input type="text" name="email" placeholder="Enter Email">
+  <br>
+  <input type="password" name="pass" placeholder="**********">
+  <input type="hidden" name="username_value" id="username_value">
+  <br>
+  <input type="submit" name="signup" value="Do SignUp">
+ </form>
+</div>
+
+</div>
+</body>
+</html>

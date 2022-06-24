@@ -1,0 +1,81 @@
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#01A9DB;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#086A87;
+}
+#wrapper h1 p
+{
+ font-size:16px;
+}
+#signup_form
+{
+ background-color:white;
+ width:270px;
+ margin-left:345px;
+ box-shadow:0px 0px 15px 0px #01A9DB;
+ padding:15px;
+}
+#signup_form #signup_label
+{
+ color:#086A87;
+ margin:0px;
+ padding-bottom:10px;
+ margin-bottom:30px;
+ font-size:25px;
+ border-bottom:1px solid #E6E6E6;
+}
+#signup_form input[type="text"],input[type="password"]
+{
+ width:230px;
+ height:35px;
+ padding-left:10px;
+ font-size:16px;
+ margin-bottom:15px;
+ border:1px solid #D8D8D8;
+ color:#585858;
+}
+#signup_form input[type="submit"]
+{
+ width:230px;
+ margin-left:-4px;
+ height:40px;
+ font-size:16px;
+ font-weight:bold;
+ background-color:#01A9DB;
+ color:#086A87;
+ border:none;
+ border-bottom:5px solid #0489B1;
+ border-radius:3px;
+}
+#signup_form #username
+{
+ display:none;
+ text-align:left;
+ padding:10px;
+ box-sizing:border-box;
+ color:#585858;
+ width:228px;
+ margin:0px;
+ margin-bottom:15px;
+ margin-left:20px;
+ min-height:35px;
+ font-size:16px;
+ background-color:#F2F2F2;
+}
